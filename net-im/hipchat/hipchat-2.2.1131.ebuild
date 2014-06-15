@@ -19,7 +19,7 @@ IUSE=""
 S=${WORKDIR}
 
 QA_PREBUILT="opt/HipChat/bin/${PN}"
-QA_PRESTRIPPED="opt/HipChat/lib"
+QA_PRESTRIPPED="opt/HipChat/lib/lib*"
 
 RDEPEND=""
 
