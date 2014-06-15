@@ -18,18 +18,21 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 S=${WORKDIR}
 
+RDEPEND=""
+
+# Avoid QA notices
 QA_PREBUILT="/opt/HipChat/bin/${PN}"
 QA_PRESTRIPPED="/opt/HipChat/lib/*"
 
-RDEPEND=""
-
 src_prepare(){
+	# Avoid QA notices
 	sed -ri 's/Terminal=0/Terminal=false/g;s/\.png//g' usr/share/applications/hipchat.desktop || die "Could not modify hipchat.desktop. Was fixed upstream?"
 }
 
 src_install() {
 	insinto /opt
 	doins -r opt/HipChat
+	fperms a+x opt/HipChat/bin/hipchat
 	dodir /opt/bin
 	dosym /opt/HipChat/bin/hipchat /opt/bin/hipchat
 	dosym libz.so.1 /opt/HipChat/lib/libz.so
