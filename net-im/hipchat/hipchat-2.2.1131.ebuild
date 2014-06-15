@@ -32,7 +32,7 @@ src_prepare(){
 src_install() {
 	insinto /opt
 	doins -r opt/HipChat
-	fperms a+x opt/HipChat/bin/hipchat
+	chmod a+x ${D}/opt/HipChat/bin/hipchat
 	dodir /opt/bin
 	dosym /opt/HipChat/bin/hipchat /opt/bin/hipchat
 	dosym libz.so.1 /opt/HipChat/lib/libz.so
