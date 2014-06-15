@@ -27,7 +27,7 @@ src_install() {
 	doins -r opt/HipChat
 	dodir /opt/bin
 	into /opt
-	dobin usr/bin/hipchat
+	dosym opt/bin/hipchat opt/HipChat/bin/hipchat
 
 	ICONDIR='usr/share/icons/hicolor/apps'
 	for res in 16 24 32 128 256
