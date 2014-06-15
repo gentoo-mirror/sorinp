@@ -24,7 +24,7 @@ RDEPEND=""
 
 src_install() {
 	into /opt
-	doins -r HipChat
+	doins -r opt/HipChat
 	dobin usr/bin/hipchat
 
 	ICONDIR='usr/share/icons/hicolor/apps'
