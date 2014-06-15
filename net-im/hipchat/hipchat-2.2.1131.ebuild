@@ -23,8 +23,9 @@ QA_PREBUILT="opt/usr/bin/${PN} HipChat/bin/${PN}"
 RDEPEND=""
 
 src_install() {
-	into /opt
+	insinto /opt
 	doins -r opt/HipChat
+	into /opt
 	dobin usr/bin/hipchat
 
 	ICONDIR='usr/share/icons/hicolor/apps'
