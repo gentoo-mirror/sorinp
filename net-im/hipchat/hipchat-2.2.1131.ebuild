@@ -18,8 +18,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 S=${WORKDIR}
 
-QA_PREBUILT="opt/HipChat/bin/${PN}"
-QA_PRESTRIPPED="opt/HipChat/lib/lib*"
+QA_PREBUILT="/opt/HipChat/bin/${PN}"
+QA_PRESTRIPPED="/opt/HipChat/lib/*"
 
 RDEPEND=""
 
