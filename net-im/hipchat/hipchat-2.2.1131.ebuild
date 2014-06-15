@@ -25,8 +25,8 @@ RDEPEND=""
 src_install() {
 	insinto /opt
 	doins -r opt/HipChat
-	into /opt
-	dobin usr/bin/hipchat
+	exeinto /opt
+	doexe usr/bin/hipchat
 
 	ICONDIR='usr/share/icons/hicolor/apps'
 	for res in 16 24 32 128 256
