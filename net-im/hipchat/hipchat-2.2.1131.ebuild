@@ -18,9 +18,14 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 S=${WORKDIR}
 
-QA_PREBUILT="opt/usr/bin/${PN} HipChat/bin/${PN}"
+QA_PREBUILT="opt/HipChat/bin/${PN}"
+QA_PRESTRIPPED="opt/HipChat/lib"
 
 RDEPEND=""
+
+src_prepare(){
+	sed -ri 's/Terminal=0/Terminal=false/g;s/\.png//g' usr/share/applications/hipchat.desktop || die "Could not modify hipchat.desktop. Was fixed upstream?"
+}
 
 src_install() {
 	insinto /opt
