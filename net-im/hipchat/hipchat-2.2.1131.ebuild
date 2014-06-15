@@ -26,8 +26,10 @@ src_install() {
 	insinto /opt
 	doins -r opt/HipChat
 	dodir /opt/bin
-	into /opt
-	dosym opt/bin/hipchat opt/HipChat/bin/hipchat
+	dosym /opt/HipChat/bin/hipchat /opt/bin/hipchat
+	dosym /opt/HipChat/lib/libz.so /lib/libz.so.1
+	dosym /opt/HipChat/lib/libuuid.so /lib/libuuid.so.1
+	dosym /opt/HipChat/lib/liblzma.so /lib/liblzma.so.5
 
 	ICONDIR='usr/share/icons/hicolor/apps'
 	for res in 16 24 32 128 256
