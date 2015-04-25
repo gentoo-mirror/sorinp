@@ -21,7 +21,7 @@ SLOT="0"
 # NOTE: varicad binaries are supplied just pre-stripped.
 RESTRICT="fetch strip"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 RDEPEND="x11-libs/libICE
 	x11-libs/libSM
