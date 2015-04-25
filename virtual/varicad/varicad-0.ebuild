@@ -13,7 +13,7 @@ IUSE="en linguas_de linguas_en linguas_pt"
 
 LANG='en'
 use linguas_de && LANG='de'
-use linguas pt && LANG='pt'
+use linguas_pt && LANG='pt'
 use en && LANG='en'
 
 RDEPEND="( sci-misc/varicad-${LANG} )"
