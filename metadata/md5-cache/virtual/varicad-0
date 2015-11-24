@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=3D / 2D CAD software for mechanical engineering
+EAPI=5
+HOMEPAGE=http://www.varicad.com/
+IUSE=en linguas_de linguas_en linguas_pt
+KEYWORDS=x86 amd64
+RDEPEND=( sci-misc/varicad-en )
+SLOT=0
+_eclass_exported_funcs=-
+_md5_=48f9fca65ee4700d09b2e04f1a015019
