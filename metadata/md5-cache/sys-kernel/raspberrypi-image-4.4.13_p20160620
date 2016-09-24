@@ -1,11 +1,13 @@
-DEFINED_PHASES=compile configure install preinst
-DESCRIPTION=Raspberry PI boot loader and firmware
+DEFINED_PHASES=install preinst unpack
+DESCRIPTION=Raspberry PI Linux kernel and device tree
 EAPI=5
 HOMEPAGE=https://github.com/raspberrypi/firmware
+IUSE=+hardfp
 KEYWORDS=~arm -*
 LICENSE=GPL-2 raspberrypi-videocore-bin
-SLOT=4.4.17_p20160620
+RDEPEND==sys-boot/raspberrypi-firmware-1.20160620
+SLOT=4.4.13
 SRC_URI=https://github.com/raspberrypi/firmware/archive/1.20160620.tar.gz -> raspberrypi-firmware-1.20160620.tar.gz
-_eclass_exported_funcs=pkg_preinst:- src_configure:- src_compile:- src_install:-
+_eclass_exported_funcs=pkg_preinst:- src_unpack:- src_install:-
 _eclasses_=readme.gentoo-r1	03878c06495db70bc36bd717383c09f7
-_md5_=86c0a6de934bfd5b5214936bf30272e4
+_md5_=a92d2975967d04f2102d4c975b71e81a
