@@ -62,7 +62,6 @@ src_install() {
 		[ ! -e "$ROOT"/boot/cmdline.txt ] && newins ${FILESDIR}/raspberrypi-firmware-1_p20160620-cmdline.txt cmdline.txt.dist
 		doins extra/dt-blob.dts
 		doins extra/git_hash
-	insinto /boot/overlays
 		doins -r boot/overlays
 
 	# FIXME: fix this for cross compilation: detect arch unless specified.
