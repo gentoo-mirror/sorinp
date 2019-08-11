@@ -1,0 +1,5 @@
+media-libs/raspberrypi-userland-bin 1.20160620: Raspberry Pi userspace tools and libraries
+net-im/hipchat 2.2.1131: Group chat and video chat built for teams.
+sys-boot/raspberrypi-firmware 1.20160620: Raspberry PI boot loader and firmware
+sys-firmware/iwl6235-ucode 18.168.6.1: Intel (R) Wireless WiFi Advanced N 6030 ucode
+sys-kernel/raspberrypi-image 4.4.13_p20160620: Raspberry PI Linux kernel and device tree
