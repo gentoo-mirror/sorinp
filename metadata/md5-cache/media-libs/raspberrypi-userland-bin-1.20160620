@@ -2,6 +2,7 @@ DEFINED_PHASES=install prepare unpack
 DESCRIPTION=Raspberry Pi userspace tools and libraries
 EAPI=5
 HOMEPAGE=https://github.com/raspberrypi/firmware
+INHERIT=multilib vcs-snapshot
 IUSE=+hardfp examples
 KEYWORDS=~arm -*
 LICENSE=BSD GPL-2 raspberrypi-videocore-bin

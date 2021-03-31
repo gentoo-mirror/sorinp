@@ -2,6 +2,7 @@ DEFINED_PHASES=install preinst unpack
 DESCRIPTION=Raspberry PI Linux kernel and device tree
 EAPI=5
 HOMEPAGE=https://github.com/raspberrypi/firmware
+INHERIT=readme.gentoo-r1
 IUSE=+hardfp
 KEYWORDS=~arm -*
 LICENSE=GPL-2 raspberrypi-videocore-bin

@@ -2,6 +2,7 @@ DEFINED_PHASES=compile configure install preinst
 DESCRIPTION=Raspberry PI boot loader and firmware
 EAPI=5
 HOMEPAGE=https://github.com/raspberrypi/firmware
+INHERIT=readme.gentoo-r1
 KEYWORDS=~arm -*
 LICENSE=GPL-2 raspberrypi-videocore-bin
 RESTRICT=binchecks strip
